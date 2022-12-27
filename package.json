@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest --environment jsdom --root src/"
+    "test": "vitest --environment jsdom --root src/",
+    "makefile": "node bin/somefile.js"
   },
   "dependencies": {
     "vue": "^3.2.45"
