@@ -7,5 +7,6 @@ describe('HelloWorld', () => {
   it('renders properly', () => {
     const wrapper = mount(HelloWorld, { props: { msg: 'Hello Vitest' } })
     expect(wrapper.text()).toContain('Hello Vitest')
+    console.log("About to fiish the test")
   })
 })
