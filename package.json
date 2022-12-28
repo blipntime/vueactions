@@ -7,7 +7,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest --environment jsdom --root src/",
-    "makefile": "node bin/somefile.js"
+    "makefile": "node bin/makefile.js",
+    "processfile": "node bin/processfile.js"
   },
   "dependencies": {
     "vue": "^3.2.45"
