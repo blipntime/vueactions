@@ -4,12 +4,12 @@
 name: Process files workflow (publish)
 
 on:
-  push:
-    branches: [ "main" ]
+  pull_request:
+    types: [ closed ]
 
 jobs:
   build:
-
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     strategy:
