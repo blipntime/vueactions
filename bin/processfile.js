@@ -1,10 +1,14 @@
 const fs = require('fs')
 const core = require('@actions/core')
 
-const contents = fs.readFileSync('somefile.output', 'utf8')
+let contents
+try {
+  contents = fs.readFileSync('somefile.output', 'utf8')
+} catch (err) {
+  core.setFailed(`Action failed with error ${err}`)
+}
 
-console.log(contents, "\nDone")
+console.log(contents, "\nProcess file Done")
 
-//core.setFailed(`Action failed with error`)
-
-process.exit(1);
+//
+// process.exit(1);
