@@ -30,5 +30,6 @@ jobs:
     
     - uses: actions/upload-artifact@v3
       with:
-        name: artifact
+        name: my-artifact
         path: tokens.scss
+        if-no-files-found: error
