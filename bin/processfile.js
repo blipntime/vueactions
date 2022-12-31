@@ -3,7 +3,7 @@ const core = require('@actions/core')
 
 let contents
 try {
-  contents = fs.readFileSync('somefile.output', 'utf8')
+  contents = fs.readFileSync('tokens.scss', 'utf8')
 } catch (err) {
   core.setFailed(`Action failed with error ${err}`)
 }

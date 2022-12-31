@@ -1,5 +1,5 @@
 const fs = require('fs')
 
-fs.writeFileSync('somefile.output', 'I just generated this')
+fs.writeFileSync('tokens.scss', '// I just generated this')
 
 console.log("Make file Done")

@@ -27,3 +27,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm run makefile
+    
+    - uses: actions/upload-artifact@v3
+      with:
+        name: artifact
+        path: tokens.scss
