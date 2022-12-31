@@ -19,9 +19,9 @@ jobs:
 
     steps:
     - uses: actions/download-artifact@v3
-    with:
-      name: artifact
-      path: tokens.scss
+      with:
+        name: artifact
+        path: tokens.scss
       
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
